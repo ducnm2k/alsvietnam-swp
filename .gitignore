@@ -1,0 +1,37 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/src/images/headerbar1.JPG
+/src/images/headerbar2.jpg
+/src/images/headerbar.jpg
+/src/images/Chronic-Bacterial-and-Viral-Infections-in-Neurodegenerative-and-Neurobehavioral-Diseases.png
+/src/images/Dental-Amalgam-and-its-effects-on-Patient's-health.png
+/src/images/What-is-ALS.png
+/src/images/Treatments.png
+/src/images/noimage.jpg
+/src/images/healingstories/DerekSwinnard.png
+/src/images/healingstories/Kim.png
+/src/images/healingstories/Nelda.png
+/src/images/healingstories/StephenSherry.png
+/src/images/healingstories/Steven Shackel.png
+/src/images/healingstories/WarrenOsborn.png

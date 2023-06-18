@@ -28,7 +28,7 @@ const Subheading = tw.p`text-left relative inline-block`;
 const Heading = tw(
     SectionHeading
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center  leading-tight`;
-const Description = tw.p` text-left text-base   font-normal leading-loose text-justify `;
+const Description = tw.p`pt-3 text-left text-base   font-normal leading-loose text-justify `;
 const Text = styled.div`
   ${tw`text-lg  `}
   p {
@@ -46,7 +46,7 @@ const Text = styled.div`
   ul {
     ${tw`list-disc list-inside`}
     li {
-      ${tw`ml-2 mb-3`}
+      ${tw`pl-4 ml-2 mb-3`}
       p {
         ${tw`mt-0 inline leading-normal`}
       }

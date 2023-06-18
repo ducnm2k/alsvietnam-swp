@@ -40,6 +40,8 @@ const Description = tw.p` text-left md:text-left text-base  font-normal leading-
 const PrimaryButton = styled(PrimaryButtonBase)((props) => [
   tw`mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`,
   props.buttonRounded && tw`rounded-full`,
+  props.show
+    ? tw`inline`:tw`hidden`,
 ]);
 
 export default ({
@@ -57,6 +59,7 @@ export default ({
   imageDecoratorBlob = false,
   imageDecoratorBlobCss = null,
   textOnLeft = false,
+  showButton = false
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
@@ -65,7 +68,7 @@ export default ({
       <TwoColumn>
         <ImageColumn>
           <Image
-            style={{ borderRadius: "50%" }}
+            style={{width: "200px" , borderRadius: "50%" }}
             src={imageSrc}
             imageBorder={imageBorder}
             imageShadow={imageShadow}
@@ -77,16 +80,20 @@ export default ({
           <TextContent>
             <Subheading>{subheading}</Subheading>
             <Description>{description}</Description>
+            <div  
+             >
             <PrimaryButton
               buttonRounded={buttonRounded}
               as="a"
               href={primaryButtonUrl}
+              show = {showButton}
             >
               <FormattedMessage
                 id="button.readMore"
                 defaultMessage="Xem thêm"
               />
             </PrimaryButton>
+            </div>
           </TextContent>
         </TextColumn>
       </TwoColumn>

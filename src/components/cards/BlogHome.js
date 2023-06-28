@@ -39,7 +39,7 @@ const CardImage = styled.div(props => [
     tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`
 ]);
 
-const TextInfo = tw.div`py-6 sm:px-4 `;
+const TextInfo = tw.div`py-6 sm:px-4 min-h-32`;
 const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
 const Title = tw.h5`text-lg font-bold`;
 

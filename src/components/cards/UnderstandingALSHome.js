@@ -72,7 +72,7 @@ export default () => {
       descriptionEN:
         "Learn about the effects of tooth fillings and how to remove them",
       descriptionVN: "Tìm hiểu về tác hại của trám răng và cách loại bỏ",
-      url: "understanding_ALS/a4cf6eb3-f002-48a7-b613-6ca4641750b8/dental-amalgam-and-its-effects-on-patient-s-health",
+      url: "/understanding_ALS/a4cf6eb3-f002-48a7-b613-6ca4641750b8/dental-amalgam-and-its-effects-on-patient-s-health",
     },
     {
       imageSrc: understandingals2,
@@ -99,7 +99,7 @@ export default () => {
       descriptionVN: "Chức năng gan có thể liên quan đến sự tiến triển của ALS",
 
       descriptionEN: "Liver function may be involved in the progress of ALS",
-      url: "understanding_ALS/a4cf6eb3-f002-48a7-b613-6ca4641750b8/when-a-diseased-liver-disrupts-the-brain",
+      url: "/understanding_ALS/a4cf6eb3-f002-48a7-b613-6ca4641750b8/when-a-diseased-liver-disrupts-the-brain",
     },
   ];
 
@@ -108,7 +108,7 @@ export default () => {
       <Content>
         <HeadingWithControl>
           <Heading>
-           {language === "en" ? "Understanding ALS" : "Các yếu tố nguy cơ"}
+           {language === "en" ? "ALS Risk Factors" : "Các yếu tố nguy cơ"}
           </Heading>
           <Controls>
             <NextButton

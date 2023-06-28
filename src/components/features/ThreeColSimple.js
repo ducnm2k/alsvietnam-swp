@@ -86,7 +86,7 @@ export default ({
                           <>
                             <div>Becoming a</div>
                             <strong>SEEDLING</strong>
-                            <div>(IMPLEMENTER)</div>
+                            <div>(IMPLEMENTERS)</div>
                           </>
                       ), titleVN: (
                           <>
@@ -104,7 +104,7 @@ export default ({
                           <>
                             <div>Becoming a</div>
                             <strong>SAPLING</strong>
-                            <div>(SUPPORTER)</div>
+                            <div>(SUPPORTERS)</div>
                           </>
                       ), titleVN: (
                           <>

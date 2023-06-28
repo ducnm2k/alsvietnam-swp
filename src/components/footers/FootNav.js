@@ -107,7 +107,7 @@ export default function FootNav() {
       </Column>
       <Column className="col-span-4 md:col-span-2 md:mt-24 md:-ml-32">
         <SubscribeContainer>
-          <h5 className="font-bold">
+          <h5 className="font-bold text-base">
             {" "}
             <FormattedMessage
               id="home.Disclaimer.title"

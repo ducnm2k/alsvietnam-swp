@@ -258,7 +258,7 @@ export default function HeadNav({ activePage }) {
       >
         <div className="mb-4 md:mb-0">
           <a
-            href="/Home"
+            href="/home"
             className={`text-gray-800 hover:text-[#035C12] duration-500 font-semibold ${
               activePage === "Home" ? "text-[#035C12]" : "text-gray-800"
             }`}

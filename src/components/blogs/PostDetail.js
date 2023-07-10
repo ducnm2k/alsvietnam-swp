@@ -22,7 +22,7 @@ const Post = tw.div`col-span-4 md:col-span-2`;
 
 const Description = styled.div`
   img {
-    ${tw`w-7/12  items-center mx-auto`}
+    ${tw`w-full  items-center mx-auto`}
   }
       p {
         ${tw`justify-center text-justify leading-loose md:ml-4`}

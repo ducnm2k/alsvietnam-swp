@@ -1,6 +1,7 @@
 import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
 import React from "react";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
  * the prebuilt landing page components by uncommenting their import and export lines respectively.
@@ -141,7 +142,8 @@ export default function App() {
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
 
   return (
-    <Router>
+    <div>
+      <Router>
       <Switch>
         <Route path="/components/:type/:subtype/:name">
           <ComponentRenderer />
@@ -228,9 +230,9 @@ export default function App() {
           <ForgotPassword />
         </Route>
 
-<Route path="/share-story" exact={true}>
-<ShareStory/>
-</Route>
+        <Route path="/share-story" exact={true}>
+          <ShareStory />
+        </Route>
 
         <Route path="/change-password" exact={true}>
           <ChangePassword />
@@ -244,6 +246,8 @@ export default function App() {
         </Route>
       </Switch>
     </Router>
+    <MessengerCustomerChat pageId="109818602167455" appId="280275528004114" loggedInGreeting="Xin chào tôi là trợ lý ảo của ALSVietnam! Tôi có thể giúp gì cho bạn"/>
+    </div>
   );
 }
 

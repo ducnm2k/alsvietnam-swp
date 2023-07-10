@@ -11,6 +11,7 @@ import { SectionHeading } from "../../components/misc/Headings";
 import TitleNav from "../../components/hero/TitleNav";
 import { Context } from "components/Wrapper";
 import CommingSoon from "pages/result/CommingSoon";
+import PayPal from "components/paypal/PayPal";
 
 const Heading = tw(SectionHeading)`text-5xl font-bold text-gray-900  `;
 const HeadingRow = tw.div`flex justify-center`;
@@ -19,6 +20,7 @@ export default () => {
   const context = useContext(Context);
   const language = context.locale;
   const [option, setOption] = useState("als");
+  const [checkout, setCheckout] = useState(false);
 
   const selectOption = (e) => {
     setOption(e.target.value);
@@ -32,10 +34,15 @@ export default () => {
         ) : (
           <TitleNav pageTitleString="Đóng góp" />
         )}
+
+
         <ContentWithPaddingXl className="mt-8 grid justify-items-center">
-       <div className="text-xl md:text-2xl">
-        {language === "en" ? "Thank you for your interest, the process is still under construction." : "Cám ơn bạn đã quan tâm, quy trình vẫn đang được xây dựng."}
-       </div>
+          {/*donation feature: added new paypal components and new paypal sdk script line23:public/index.html */}
+          <PayPal />
+          {/*Old version below: */
+          /* <div className="text-xl md:text-2xl">
+            {language === "en" ? "Thank you for your interest, the process is still under construction." : "Cám ơn bạn đã quan tâm, quy trình vẫn đang được xây dựng."}
+          </div> */}
         </ContentWithPaddingXl>
         {/* <ContentWithPaddingXl className="mt-8 grid justify-items-center">
 
